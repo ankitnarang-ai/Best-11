@@ -1,0 +1,33 @@
+@use './variables' as *;
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-primary;
+  background-color: $background-default;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: $spacing-unit;
+}
+
+.mt-2 {
+  margin-top: $spacing-unit * 2;
+}
