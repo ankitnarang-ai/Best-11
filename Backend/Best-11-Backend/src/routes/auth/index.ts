@@ -64,3 +64,15 @@ authRouter.post("/public/login", async (req: Request, res: Response) => {
   
 });
 
+
+/** Logout api */
+authRouter.post("/public/logout", async (req: Request, res: Response) => {
+
+  try {
+    res.clearCookie('token');
+    res.send('Logged out successfully');
+  } catch (error) {
+    res.status(400).send(`message : ${error.message}`);
+  }
+})
+
